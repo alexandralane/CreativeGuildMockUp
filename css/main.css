@@ -1,0 +1,150 @@
+.btn-primary {
+  background-color: #148cb8;
+  border-color: #148cb8; }
+
+.btn-secondary {
+  background-color: #333333;
+  border-color: #333333; }
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  background-color: #333333;
+  border-color: #333333; }
+
+a {
+  color: #148cb8; }
+
+h1 {
+  font-weight: bold;
+  text-transform: capitalize; }
+
+p {
+  color: #999999;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem; }
+
+nav {
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6; }
+  nav .wrapper > button {
+    margin-left: 10px; }
+
+.hero {
+  border-bottom: 1px solid #e6e6e6;
+  margin: 30px 0;
+  text-align: center; }
+
+.form {
+  height: auto;
+  margin: 2rem 0;
+  width: 100%; }
+  .form-group {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem; }
+    .form-group .input-field {
+      background: #f1f5f8;
+      border-radius: 2rem;
+      border: none;
+      color: #333333;
+      font-size: 0.95rem;
+      font-weight: 400;
+      height: auto;
+      outline: none;
+      padding: 0.75rem 1.25rem;
+      width: 100%; }
+    .form-group .input-submit {
+      background: #148cb8;
+      border-radius: 2rem;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 500;
+      outline: none;
+      padding: 0.65rem 2rem;
+      text-align: center; }
+
+.plans .container {
+  margin-bottom: 57px;
+  text-align: center; }
+.plans .plan-items .row {
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+.plans .col {
+  border: 1px solid #999999;
+  max-width: 240px;
+  min-width: 240px;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 0;
+  position: relative; }
+  .plans .col:hover .price-tag {
+    background-color: #e6e6e6;
+    border-radius: 0 0 10px 10px; }
+  .plans .col .wrapper {
+    margin: 15px;
+    min-height: 210px; }
+    .plans .col .wrapper .icon {
+      align-items: center;
+      background: #e6e6e6;
+      border-radius: 70px;
+      color: #999999;
+      display: flex;
+      flex: 1 auto;
+      font-size: 2rem;
+      height: 60px;
+      justify-content: center;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: -30px;
+      width: 60px; }
+  .plans .col h5 {
+    margin: 50px 0 19px;
+    text-transform: uppercase; }
+  .plans .col .price-tag {
+    border-top: 1px solid #333333;
+    display: flex;
+    flex-flow: column;
+    flex: 1 auto;
+    padding: 15px; }
+    .plans .col .price-tag .price {
+      align-items: flex-start;
+      flex: 1 auto;
+      justify-content: center;
+      text-align: left;
+      display: flex; }
+    .plans .col .price-tag sup {
+      font-size: 50%;
+      top: -.9rem; }
+    .plans .col .price-tag p {
+      line-height: 17px;
+      margin-left: 10px;
+      font-size: 1rem;
+      margin-top: 9px; }
+    .plans .col .price-tag .annual-price {
+      display: none; }
+
+@media screen and (max-width: 991px) {
+  .plans .col {
+    min-width: 210px; } }
+@media screen and (max-width: 767px) {
+  .plans .plan-items .row {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .plans .col {
+    min-width: 240px; } }
+@media screen and (max-width: 539px) {
+  .plans .col {
+    max-width: 200px;
+    min-width: auto; }
+    .plans .col .wrapper {
+      min-height: auto; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,216 @@
+@import 'mixins';
+@import 'colours';
+
+// Bootstrap colour overrides and global styles
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.btn-secondary {
+  background-color: $grey;
+  border-color: $grey;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-secondary.dropdown-toggle {
+  background-color: $grey;
+  border-color: $grey;	
+}
+
+a {
+  color: $blue;
+}
+
+h1 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+p {
+  color: $mid-grey;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+//////////nav //////////
+nav {
+  padding: 15px 0;
+  border-bottom: 1px solid $light-grey;
+
+  .wrapper > button {
+    margin-left: 10px;
+  }
+}//end .nav
+
+//////////Hero styling//////////
+.hero {
+  border-bottom: 1px solid $light-grey;
+  margin: 30px 0;
+  text-align: center;
+}
+
+//////////Form styling found on the login modal//////////
+.form {
+  height: auto;
+  margin: 2rem 0;
+  width: 100%;
+
+  &-group {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .input-field {
+      background: $color-light;
+      border-radius: 2rem;
+      border: none;
+      color: $grey;
+      font-size: 0.95rem;
+      font-weight: 400;
+      height: auto;
+      outline: none;
+      padding: 0.75rem 1.25rem;
+      width: 100%;
+    }
+
+    .input-submit {
+      background: $blue;
+      border-radius: 2rem;
+      border: none;
+      color: $white;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 500;
+      outline: none;
+      padding: 0.65rem 2rem;
+      text-align: center;
+    }
+  }
+}//end .form
+
+
+//////////Plans section styling//////////
+.plans {
+  .container {
+    margin-bottom: 57px;
+    text-align: center;
+  }
+
+  .plan-items .row {
+  	flex-wrap: nowrap;
+  	justify-content: space-between;
+  }
+
+  .col { 
+  	border: 1px solid $mid-grey;
+  	max-width: 240px;
+  	min-width: 240px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 0;
+    position: relative;
+
+    &:hover {
+      .price-tag {
+     	background-color: $light-grey;
+     	border-radius: 0 0 10px 10px;
+      }
+    }//end col:hover
+
+    .wrapper {
+      margin: 15px;
+      min-height: 210px;
+
+      .icon {
+        align-items: center;
+        background: $light-grey;
+        border-radius: 70px;
+        color: $mid-grey;
+        display: flex;
+        flex: 1 auto;
+        font-size: 2rem;
+        height: 60px;
+        justify-content: center;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: -30px;
+        width: 60px;
+   	  }
+    }
+
+
+    h5 {
+      margin: 50px 0 19px;
+      text-transform: uppercase;
+    }
+
+    .price-tag {
+      border-top: 1px solid $grey;
+      display: flex;
+      flex-flow: column;
+      flex: 1 auto;
+      padding: 15px;
+
+      .price {
+    	align-items: flex-start;
+    	flex: 1 auto;
+    	justify-content: center;
+    	text-align: left;
+      	display: flex;
+      }
+
+      sup {
+        font-size: 50%;
+    	top: -.9rem;
+      }
+
+      p {
+    	line-height: 17px;
+    	margin-left: 10px;
+      	font-size: 1rem;
+        margin-top: 9px;
+      }
+
+      .annual-price {
+        display: none;
+      }
+    }//end.price-tag
+  }//end .col
+}//end .plan
+
+@media screen and (max-width: 991px) {
+  .plans .col {
+  	min-width: 210px;
+  }
+}//end media 991px
+
+@media screen and (max-width: 767px) {
+  .plans {
+  	.plan-items .row {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .col {
+  	  min-width: 240px;
+    }
+  }
+}//end media 767px
+
+@media screen and (max-width: 539px) {
+  .plans .col {
+  	max-width: 200px;
+  	min-width: auto;
+
+  	.wrapper {
+  	  min-height: auto;
+  	}
+  }
+}//end media 539px
